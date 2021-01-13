@@ -1,0 +1,24 @@
+{
+  "name": "chatfy",
+  "version": "1.0.0",
+  "description": "Visual chat room app inspired by Habbo Hotel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchellvdKlij/chatfy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchellvdKlij/chatfy/issues"
+  },
+  "homepage": "https://github.com/MitchellvdKlij/chatfy#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "phaser": "^3.51.0"
+  }
+}

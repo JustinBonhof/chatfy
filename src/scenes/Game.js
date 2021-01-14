@@ -5,7 +5,7 @@ const config = {
     scene: {
         preload: preload,
         create: create,
-        update: update
+        update: update,
     }
 };
 
@@ -15,6 +15,7 @@ function preload ()
 {
     this.load.image('tiles', 'src/tiles/default.png');
     this.load.tilemapTiledJSON('floor', 'src/tiles/finalized.json')
+    this.load.image('man', 'src/sprites/man-se.png')
 }
 
 function create ()
@@ -23,6 +24,7 @@ function create ()
     const tileset = map.addTilesetImage('default', 'tiles')
 
     const layer = map.createLayer('Tile Layer 1', tileset)
+    let player = this.add.sprite(0, 0, 'man').setScale(0.3)
 }
 
 function update ()

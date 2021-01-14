@@ -8,5 +8,20 @@
 </head>
 <body>
     <script src="src/scenes/Game.js"></script>
+    <script>
+        const socket = new WebSocket('ws://localhost:5000');
+
+        socket.addEventListener('open', function (event) {
+            console.log('Connected to the WS Server!')
+        });
+
+        socket.addEventListener('close', function (event) {
+            console.log('Disconnected from the WS Server!')
+        });
+
+        socket.addEventListener('message', function (event) {
+            console.log('Message from server ', event.data);
+        });
+    </script>
 </body>
 </html>
